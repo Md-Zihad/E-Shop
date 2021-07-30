@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.eshop.R
 import com.example.eshop.firestore.FireStoreClass
 import com.example.eshop.model.Product
+import com.example.eshop.ui.activities.CartListActivity
 import com.example.eshop.ui.activities.ProductDetailsActivity
 import com.example.eshop.ui.activities.SettingActivity
 import com.example.eshop.ui.adapters.DashboardItemsListAdapter
@@ -54,6 +55,10 @@ class DashboardFragment : BaseFragment() {
             R.id.action_settings -> {
 
                 startActivity(Intent(activity, SettingActivity::class.java))
+                return true
+            }
+            R.id.action_cart -> {
+                startActivity(Intent(activity, CartListActivity::class.java))
                 return true
             }
         }

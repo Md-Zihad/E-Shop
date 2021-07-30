@@ -12,12 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/ThemeEShop">
-
+        <activity android:name=".ui.activities.CartListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeEShop.NoActionBar">
+        </activity>
         <activity
             android:name=".ui.activities.ProductDetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ThemeEShop.NoActionBar" />
-
         <activity
             android:name=".ui.activities.AddProductActivity"
             android:screenOrientation="portrait"
